@@ -21,17 +21,8 @@ A clean, modern, and responsive personal portfolio website designed to showcase 
 - JavaScript 
 - Deployed via Netlify
 
-## 📜 Access & Licensing
-
-> 🛑 **Note:** The source code for this portfolio is **paid** and not publicly available in this repository.
-
-If you're interested in purchasing the code or want a custom-built version:
 
 📩 **Contact me on Discord** → `arguexd`
-
-## 📎 License
-
-This project is **not open-source**. Unauthorized use, redistribution, or reproduction of the code is strictly prohibited.
 
 ---
 
