@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaishnav D. - Portfolio</title>
+    <meta name="description" content="Portfolio of Vaishnav D. showcasing projects and skills.">
+    <meta name="keywords" content="Vaishnav D., Portfolio, Web Development, Projects, Skills">
+    <meta name="author" content="Vaishnav D.">
+    <!-- CSS LINK  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- favicon  -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+</head>
+<body>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg custom-navbar">
+            <div class="container">
+                <!-- Brand text -->
+                <a class="navbar-brand" href="#">
+                    Vaishnav
+                </a>
+                
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <!-- Navbar items - right aligned -->
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </nav>
+    
+
+<!-- Home Section -->
+<section id="home" class="section d-flex align-items-center">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Image Container - now with two images -->
+            <div class="col-lg-6 col-12 order-lg-2 d-flex justify-content-center mb-4 mb-lg-0">
+                <div class="home-image-container position-relative">
+                    <div class="rounded-circle bg-custom p-2 home-circle" style="width: min(300px, 80vw); height: min(300px, 80vw);">
+                        <!-- Smiling Image (default) -->
+                        <img src="images/mesmiling.png" alt="Vaishnav D Smiling" 
+                             class="img-fluid rounded-circle w-100 h-100 object-fit-cover main-image">
+                        
+                        <!-- Shocked Image (hidden by default) -->
+                        <img src="images/meshocked.png" alt="Vaishnav D Shocked" 
+                             class="img-fluid rounded-circle w-100 h-100 object-fit-cover hover-image">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text Content -->
+            <div class="col-lg-6 col-12 order-lg-1 text-center text-lg-start">
+                <div class="home-content">
+                    <h1 class="display-4 mb-4 home-intro">Hi, I'm Vaishnav D.</h1>
+                    <p class="lead mb-4">A Student and Developer crafting experiences.</p>
+                    
+                    <!-- Buttons Container -->
+                    <div class="d-flex flex-wrap gap-2 mt-4 justify-content-center justify-content-lg-start">
+                        <a href="#contact" class="btn btn-dark btn-sm px-3 py-1 px-lg-4 py-lg-2">Contact Me</a>
+                        <a href="#projects" class="btn btn-outline-dark btn-sm px-3 py-1 px-lg-4 py-lg-2">View Work</a>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+
+
+    <section id="about" class="section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Text Content -->
+            <div class="col-lg-6 col-12 order-lg-1 text-center text-lg-start">
+                <div class="about-content">
+                    <h1 class="display-4 mb-4 about-intro">About Me</h1>
+                    <p class="lead mb-4">A student and passionate web developer with a love for building clean, functional websites and apps. Coding since class 8, with a growing curiosity for both software and hardware. Outside the screen, usually found at the gym or reading something thought-provoking.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+<section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="text-left display-4 mb-5">Skills &amp; Technologies </h2>
+      <div class="row g-4 justify-content-center">
+        <!-- React.js Card -->
+        <div class="col-md-3 col-sm-6">
+          <div class="card skill-card h-100">
+            <div class="card-body text-center p-4">
+              <div class="skill-icon mb-3">
+                <i class="fa-brands fa-bootstrap fa-3x" style="color: #000000;"></i>
+              </div>
+              <h5 class="card-title">Bootstrap</h5>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Node.js Card -->
+        <div class="col-md-3 col-sm-6">
+          <div class="card skill-card h-100">
+            <div class="card-body text-center p-4">
+              <div class="skill-icon mb-3">
+                <i class="fa-brands fa-python fa-3x" style="color: #000000;"></i>
+              </div>
+              <h5 class="card-title">Python</h5>
+            </div>
+          </div>
+        </div>
+
+        <!-- Python Card -->
+        <div class="col-md-3 col-sm-6">
+          <div class="card skill-card h-100">
+            <div class="card-body text-center p-4">
+              <div class="skill-icon mb-3">
+                <i class="fa-brands fa-css3-alt fa-3x" style="color: #000000;"></i>
+              </div>
+              <h5 class="card-title">CSS</h5>
+            </div>
+          </div>
+        </div>
+        
+        <!-- MongoDB Card -->
+        <div class="col-md-3 col-sm-6">
+          <div class="card skill-card h-100">
+            <div class="card-body text-center p-4">
+              <div class="skill-icon mb-3">
+                <i class="fa-brands fa-square-js fa-3x" style="color: #000000;"></i>
+              </div>
+              <h5 class="card-title">Javascript</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 col-sm-6">
+            <div class="card skill-card h-100">
+              <div class="card-body text-center p-4">
+                <div class="skill-icon mb-3">
+                  <i class="fa-brands fa-html5 fa-3x" style="color: #000000;"></i>
+                </div>
+                <h5 class="card-title">HTML5</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="card skill-card h-100">
+              <div class="card-body text-center p-4">
+                <div class="skill-icon mb-3">
+                  <i class="fa-brands fa-java fa-3x" style="color: #000000;"></i>
+                </div>
+                <h5 class="card-title">Java</h5>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+   <!-- Projects Section -->
+<section id="projects" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-left display-4 mb-5">Featured Projects</h2>
+    <div class="row g-4">
+      
+      <!-- Project 1 - Shop Showcase -->
+      <div class="col-lg-6">
+        <div class="card project-card h-100">
+          <div class="row g-0 h-100">
+            <div class="col-md-6">
+              <div class="project-preview h-100" style="background-color: #f5f5f5;">
+                <div class="project-image-container d-flex justify-content-center align-items-center p-3 image-wrapper">
+                  <img src="images/limbuwebsite.png" alt="Project Preview" 
+                       class="img-fluid mw-100 mh-100 object-fit-contain">
+                </div>
+                <div class="h-100 d-flex align-items-center justify-content-center">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-4 d-flex flex-column h-100">
+                <h3 class="card-title">Lemon Soda Shop</h3>
+                <p class="card-text">A responsive website to showcase a Lemon Soda shop made with HTML,CSS,JS.</p>
+                <div class="mt-auto">
+                  <div class="d-flex gap-2">
+                    <a target="_blank" href="https://limbuwebsite.netlify.app/" class="btn btn-dark btn-sm">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Project 2 - My Startup -->
+      <div class="col-lg-6">
+        <div class="card project-card h-100">
+          <div class="row g-0 h-100">
+            <div class="col-md-6">
+              <div class="project-preview h-100" style="background-color: #f5f5f5;">
+                <div class="project-image-container d-flex justify-content-center align-items-center p-3 image-wrapper">
+                  <img src="images/sarthielogo.png" alt="Project Preview" 
+                       class="img-fluid mw-100 mh-100 object-fit-contain">
+                </div>
+                <div class="h-100 d-flex align-items-center justify-content-center">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-4 d-flex flex-column h-100">
+                <h3 class="card-title">Sarthie</h3>
+                <p class="card-text">Sarthie is a website development startup that helps small businesses go online. We build simple and affordable websites tailored to their needs. With Sarthie, growing digitally becomes easy. </p>
+                <div class="mt-auto">
+                  <div class="d-flex gap-2">
+                    <a target="_blank" href="https://www.instagram.com/sarthie11/" class="btn btn-dark btn-sm">Instagram</a>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <!-- Project 1 - Verse Website -->
+      <div class="col-lg-6">
+        <div class="card project-card h-100">
+          <div class="row g-0 h-100">
+            <div class="col-md-6">
+              <div class="project-preview h-100" style="background-color: #f5f5f5;">
+                <div class="project-image-container d-flex justify-content-center align-items-center p-3 image-wrapper">
+                  <img src="images/kavyawebsite.png" alt="Project Preview" 
+                       class="img-fluid mw-100 mh-100 object-fit-contain">
+                </div>
+                <div class="h-100 d-flex align-items-center justify-content-center">
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="card-body p-4 d-flex flex-column h-100">
+                <h3 class="card-title">Vaishnav's Verse</h3>
+                <p class="card-text">It is a minimalistic poetry website where emotions meet code.
+A personal space to share heartfelt shayaris, explore poetic expressions, and preserve every verse with care.</p>
+                <div class="mt-auto">
+                  <div class="d-flex gap-2">
+                    <a target="_blank" href="https://verse.vaishnav.site" class="btn btn-dark btn-sm">Live Demo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+    <!-- Contact Section -->
+<section id="contact" class="py-5">
+  <div class="container">
+    <h2 class="text-left display-4 mb-5">Get In Touch</h2> <br><br><br>
+    <div class="row g-4 justify-content-center">
+      
+      <!-- Email Card -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card contact-card h-100">
+          <div class="card-body text-center p-4">
+            <div class="contact-icon mb-3">
+              <i class="fas fa-envelope fa-3x" style="color: #000000;"></i>
+            </div>
+            <h5 class="card-title">Email</h5>
+            <p class="card-text">sarthie11@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Social Media Card -->
+      <div class="col-md-4 col-sm-6">
+        <div class="card contact-card h-100">
+          <div class="card-body text-center p-4">
+            <div class="contact-icon mb-3">
+              <i class="fas fa-share-alt fa-3x" style="color: #000000;"></i>
+            </div>
+            <h5 class="card-title">Social Media</h5>
+            <div class="social-links mt-3">
+              <a href="https://www.instagram.com/vaishnavdounde65/" class="btn btn-outline-dark m-1"><i class="fab fa-instagram"></i></a>
+              <a href="https://discord.com/users/842978764690030593" class="btn btn-outline-dark m-1"><i class="fab fa-discord"></i></a>
+              <a href="https://github.com/Arguee" class="btn btn-outline-dark m-1"><i class="fab fa-github"></i></a>
+              <a href="https://linkedin.com/in/vaishnav-dounde-578613326/" class="btn btn-outline-dark m-1"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      
+    </div>
+  </div>
+</section>
+
+<!-- Simple Footer -->
+<footer class="bg-white text-dark py-3">
+  <div class="container">
+      <div class="row">
+          <div class="col-12 text-center">
+              <p class="mb-0">© 2025 Vaishnav. All rights reserved.</p>
+          </div>
+      </div>
+  </div>
+</footer>
+    
+
+        <!-- Script  -->
+        <script src='script.js'></script>
+        <!-- Bootstrap JS Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

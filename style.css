@@ -1,0 +1,375 @@
+/* --------------------------------Font Imports-------------------------------  */
+@font-face {
+    font-family: Helvetica;
+    src: url(fonts/HelveticaNeue-Roman.woff);
+  }
+
+
+/* ------------------------------- Nav Bar ------------------------------------ */
+.custom-navbar {
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease; /* Smooth hide/show transition */
+
+}
+
+.custom-navbar.hidden {
+    transform: translateY(-100%); /* Hide by moving up */
+    opacity: 0;
+    pointer-events: none; /* Disable clicks when hidden */
+}
+
+.custom-navbar .navbar-brand img {
+    position: relative;
+    bottom: 5px;
+    left: 0%;
+    height: 30px;
+    width: auto;
+}
+
+.custom-navbar .navbar-nav .nav-link {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 0.5rem 1rem;
+    color: rgb(0, 0, 0);
+    transition: all 0.3s ease;
+}
+
+.custom-navbar .navbar-nav .nav-link:hover {
+    color: #292929;
+}
+
+.custom-navbar .navbar-nav .nav-link.active {
+    color: #fff;
+    font-weight: 600;
+    border-bottom: 2px solid #fff;
+}
+
+.custom-navbar .btn-visit-store {
+    color: white;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 2px;
+    border: 1px solid white;
+    padding: 8px 16px;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.custom-navbar .btn-visit-store:hover {
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.custom-navbar .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+.custom-navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.8)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 992px) {
+    .navbar-collapse {
+        text-align: center; /* Center the content */
+    }
+    
+    .position-absolute {
+        position: static !important;
+        transform: none !important;
+        margin: 1rem 0;
+        width: 100%;
+        background: #ffffff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .ms-auto {
+        margin: 0 auto !important;
+        display: block; /* Changed from table to block */
+        width: fit-content; /* Makes the ul only as wide as its content */
+    }
+    
+    .navbar-nav {
+        display: inline-block; /* Helps with centering */
+        padding: 0;
+    }
+    
+    .nav-item {
+        padding: 0 12px;
+        display: block; /* Ensures items stack vertically */
+    }
+}
+
+.nav-item {
+    padding: 0 12px;
+}
+
+.navbar-brand {
+    position: relative;
+    z-index: 1;
+}
+
+
+
+/*---------------------------------- Body--------------------------------------  */
+body{
+    -webkit-user-select:none;-moz-user-select:-moz-none;
+    -ms-user-select:none;user-select:none;
+}
+#home {
+    padding: 100px 0;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+}
+#about {
+    padding: 100px 0;
+    min-height: 90vh;
+    background-color: #F9FAFB;
+}
+#skills {
+    padding: 100px 0;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+}
+#projects {
+    padding: 100px 0;
+    min-height: 100vh;
+    background-color: #FFFFFF;
+}
+#contact {
+    padding: 100px 0;
+    min-height: 100vh;
+    background-color: #FFFFFF
+}
+
+/*------------------------------------------ Home Page ----------------------------- */
+/* Home Section Styling */
+#home {
+    padding: 100px 0;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* Image Container */
+.home-image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Image Styling */
+.home-circle {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s ease;
+}
+
+.main-image {
+    position: relative;
+    z-index: 2;
+    transition: opacity 0.5s ease;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Hover Animation */
+.home-image-container:hover .main-image {
+    opacity: 0;
+}
+
+.home-image-container:hover .hover-image {
+    opacity: 1;
+}
+
+/* Alternative: Click Animation (uncomment to use) */
+/*
+.home-image-container.clicked .main-image {
+    opacity: 0;
+}
+.home-image-container.clicked .hover-image {
+    opacity: 1;
+}
+*/
+
+/* Rest of your existing styles... */
+.home-intro {
+    font-weight: 700;
+    color: #212529;
+}
+
+.home-content p.lead {
+    color: #495057;
+    font-size: 1.25rem;
+    max-width: 500px;
+}
+
+.btn-dark {
+    background-color: #0a0a0a;
+    border-color: #212529;
+    transition: all 0.3s ease;
+}
+
+.btn-dark:hover {
+    background-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.btn-outline-dark {
+    border-color: #212529;
+    color: #212529;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+    background-color: #212529;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.bg-custom {
+    background-color: #e9ecef;
+}
+
+@media (max-width: 992px) {
+    .home-content {
+        text-align: center;
+    }
+    
+    .home-intro {
+        font-size: 2.5rem;
+    }
+    
+    .home-content p.lead {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/*---------------------------------- Home Page End -----------------------------  */
+
+/*--------------------------------- skills page------------------------------  */
+.skill-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .skill-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .skill-card:hover .skill-icon {
+    transform: scale(1.1);
+  }
+
+  /*---------------------------------- skills page end----------------------  */
+
+/*---------------------------------- projects page-----------------------------  */
+
+.project-card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-preview {
+    min-height: 200px;
+  }
+  
+  @media (max-width: 768px) {
+    .project-card .row {
+      flex-direction: column;
+    }
+    .project-card .col-md-6 {
+      width: 100%;
+    }
+    .project-preview {
+      height: 200px;
+    }
+}
+
+.project-image-container {
+    width: 100%;
+    height: 300px; /* Adjust height as needed */
+    background-color: #f8f9fa; /* Optional background color */
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .project-image-container img {
+    max-width: 90%; /* Leaves space on sides */
+    max-height: 90%; /* Leaves space top/bottom */
+    object-fit: contain;
+  }
+
+/*--------------------------- project page end --------------------------- */
+/*---------------------------------- contact page-----------------------------  */
+.contact-card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .contact-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-card:hover .contact-icon {
+    transform: scale(1.1);
+  }
+  
+  .social-links .btn {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+  
+  /*------------------------ contact page end --------------------------------- */
+
+  
+  /* footer  */
+
+  footer {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    background-color: #212529 !important;
+}
