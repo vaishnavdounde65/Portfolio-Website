@@ -2,8 +2,6 @@
 
 A clean, modern, and responsive personal portfolio website designed to showcase my projects, skills, and personal brand. Built with attention to detail and user experience, this site highlights creativity through minimalism and function.
 
-![Portfolio Preview](https://media.discordapp.net/attachments/1203376606710857789/1359922024440529137/image.png?ex=67f93d94&is=67f7ec14&hm=b14aef9c8eeb551d1b6a8c4c8ddd214cc6b2fcf7c7393e7047a9eb8b8882488c&=&format=webp&quality=lossless&width=1756&height=800)
-
 ## 🌐 Live Demo
 
 🔗 [https://vaishnav.site/](https://vaishnav.site/)
